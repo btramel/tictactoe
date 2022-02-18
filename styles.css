@@ -46,6 +46,46 @@ html, body {
     cursor: not-allowed;
 }
 
+.winning-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: mediumseagreen;
+    font-size: 5rem;
+}
+
+.winning-message button {
+    font-size: 3rem;
+    font-family: inherit;
+    background-color: blanchedalmond;
+    color: mediumseagreen;
+    border: 1px solid mediumseagreen;
+    padding: .75rem 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.winning-message button:hover {
+    background-color: mediumseagreen;
+    color: blanchedalmond;
+    border: 1px solid blanchedalmond;
+}
+
+.winning-message.show {
+    display: flex;
+}
+
+
+
+
 
 
 /*          PSEUDO CLASSES TO CREATE MARKS          */
