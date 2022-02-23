@@ -12,15 +12,6 @@ const playerSelect = () => {
     
 };
 
-// get display for messages
-// get cells to click inside of and hover over 
-// get button for reset
-
-// assign cells a number inside an array 0 - 8
-
-// switch between x's and o's each turn
-// check for win after each turn
-
 
 const X_CLASS = 'x'
 const O_CLASS = 'o'
@@ -39,11 +30,13 @@ const board = document.getElementById('board')
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 const winningMessageElement = document.getElementById('winning-message')
 const restartButton = document.getElementById('restartButton')
+const constantRestart = document.getElementById('restart')
 let circleTurn
 
 startGame()
 
 restartButton.addEventListener('click', startGame)
+constantRestart.addEventListener('click', startGame)
 
 function startGame () {
     circleTurn = false

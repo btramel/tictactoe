@@ -16,11 +16,52 @@ html, body {
     background-color: blanchedalmond;
     color:mediumseagreen;
     text-align: center;
+    max-height: 100vh;
+    max-width: 100vw;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: slategray;
+}
+
+a:visited {
+    color:slategray;
+    text-decoration: none;
+}
+
+.restart {
+    font-size: .75rem;
+    font-family: inherit;
+    background-color: blanchedalmond;
+    color: mediumseagreen;
+    border: 1px solid mediumseagreen;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.restart:hover {
+    background-color: mediumseagreen;
+    color: blanchedalmond;
+    border: 1px solid blanchedalmond;
+}
+
+.restart:active {
+    background-color: blanchedalmond;
+    color: mediumseagreen;
+    border: 1px solid mediumseagreen;
 }
 
 .board {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     display: grid;
     gap: 3px;
     place-content: center;
